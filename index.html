@@ -1,0 +1,269 @@
+<html>
+ <head>
+  <title>
+   E-Commerce Website
+  </title>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&amp;display=swap" rel="stylesheet"/>
+  <script src="https://cdn.tailwindcss.com">
+  </script>
+  <style>
+   body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+  </style>
+ </head>
+ <body>
+  <header class="bg-gray-800 text-white py-4">
+   <div class="container mx-auto flex justify-between items-center">
+    <div class="text-2xl font-bold">
+     E-Shop
+    </div>
+    <nav>
+     <ul class="flex space-x-4">
+      <li>
+       <a class="hover:text-gray-400" href="#">
+        Home
+       </a>
+      </li>
+      <li>
+       <a class="hover:text-gray-400" href="#">
+        Shop
+       </a>
+      </li>
+      <li>
+       <a class="hover:text-gray-400" href="#">
+        About
+       </a>
+      </li>
+      <li>
+       <a class="hover:text-gray-400" href="#">
+        Contact
+       </a>
+      </li>
+     </ul>
+    </nav>
+   </div>
+  </header>
+  <div class="relative">
+   <img alt="Banner image showing a variety of products available in the e-commerce store" class="w-full h-96 object-cover" height="400" src="https://storage.googleapis.com/a1aa/image/b2fu5FCtMmVqJ6lmHIBhDBfPBy3ohylfd5K74fTlodPqEhvPB.jpg" width="1200"/>
+   <div class="absolute inset-0 flex items-center justify-center">
+    <h1 class="text-white text-4xl font-bold">
+     Welcome to E-Shop
+    </h1>
+   </div>
+  </div>
+  <div class="container mx-auto mt-8">
+   <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+    <div class="border p-4 text-center">
+     <img alt="Product 1: A stylish modern chair with wooden legs and a comfortable cushion." class="mx-auto" height="300" src="https://storage.googleapis.com/a1aa/image/pBtV5feKwKnOBURSjOX8gRMdxHeGpxqLOL5FZnyOPEyniw3nA.jpg" width="300"/>
+     <h2 class="text-xl font-bold mt-4">
+      Product 1
+     </h2>
+     <p class="text-gray-600">
+      A stylish modern chair with wooden legs and a comfortable cushion.
+     </p>
+     <div class="text-lg font-bold mt-2">
+      $99.99
+     </div>
+     <button class="bg-blue-500 text-white px-4 py-2 mt-4 rounded hover:bg-blue-600" onclick="openOrderForm('Product 1', 99.99)">
+      Order Now
+     </button>
+    </div>
+    <div class="border p-4 text-center">
+     <img alt="Product 2: A sleek black smartwatch with a rectangular display and a silicone band." class="mx-auto" height="300" src="https://storage.googleapis.com/a1aa/image/RMnNnfXtpw0OFya7TJiatchXXsyke1OoWzD1nmkyRaQRR47TA.jpg" width="300"/>
+     <h2 class="text-xl font-bold mt-4">
+      Product 2
+     </h2>
+     <p class="text-gray-600">
+      A sleek black smartwatch with a rectangular display and a silicone band.
+     </p>
+     <div class="text-lg font-bold mt-2">
+      $199.99
+     </div>
+     <button class="bg-blue-500 text-white px-4 py-2 mt-4 rounded hover:bg-blue-600" onclick="openOrderForm('Product 2', 199.99)">
+      Order Now
+     </button>
+    </div>
+    <div class="border p-4 text-center">
+     <img alt="Product 3: A pair of wireless earbuds in a compact charging case." class="mx-auto" height="300" src="https://storage.googleapis.com/a1aa/image/vFSjtg6XqAoCAZPxsgJ0YsFFTQfIP6D0lbe5Zf27lFAkiw3nA.jpg" width="300"/>
+     <h2 class="text-xl font-bold mt-4">
+      Product 3
+     </h2>
+     <p class="text-gray-600">
+      A pair of wireless earbuds in a compact charging case.
+     </p>
+     <div class="text-lg font-bold mt-2">
+      $49.99
+     </div>
+     <button class="bg-blue-500 text-white px-4 py-2 mt-4 rounded hover:bg-blue-600" onclick="openOrderForm('Product 3', 49.99)">
+      Order Now
+     </button>
+    </div>
+    <div class="border p-4 text-center">
+     <img alt="Product 4: A high-quality DSLR camera with a detachable lens." class="mx-auto" height="300" src="https://storage.googleapis.com/a1aa/image/R3wzrBokG1pnMpEh2xrT9DIfFaETPDRCuEVIyphqU7YnI89JA.jpg" width="300"/>
+     <h2 class="text-xl font-bold mt-4">
+      Product 4
+     </h2>
+     <p class="text-gray-600">
+      A high-quality DSLR camera with a detachable lens.
+     </p>
+     <div class="text-lg font-bold mt-2">
+      $499.99
+     </div>
+     <button class="bg-blue-500 text-white px-4 py-2 mt-4 rounded hover:bg-blue-600" onclick="openOrderForm('Product 4', 499.99)">
+      Order Now
+     </button>
+    </div>
+    <div class="border p-4 text-center">
+     <img alt="Product 5: A comfortable ergonomic office chair with adjustable height and armrests." class="mx-auto" height="300" src="https://storage.googleapis.com/a1aa/image/4xd8UyNTc7bmNZEVahfAOkhDV64reUUbOfWp1AknzrRMiw3nA.jpg" width="300"/>
+     <h2 class="text-xl font-bold mt-4">
+      Product 5
+     </h2>
+     <p class="text-gray-600">
+      A comfortable ergonomic office chair with adjustable height and armrests.
+     </p>
+     <div class="text-lg font-bold mt-2">
+      $149.99
+     </div>
+     <button class="bg-blue-500 text-white px-4 py-2 mt-4 rounded hover:bg-blue-600" onclick="openOrderForm('Product 5', 149.99)">
+      Order Now
+     </button>
+    </div>
+    <div class="border p-4 text-center">
+     <img alt="Product 6: A modern desk lamp with a flexible neck and touch controls." class="mx-auto" height="300" src="https://storage.googleapis.com/a1aa/image/OUDfSFlzop2YUq0BZ3I8yvss8eOGNefUpM9VZ4GO7XDfJCfeJA.jpg" width="300"/>
+     <h2 class="text-xl font-bold mt-4">
+      Product 6
+     </h2>
+     <p class="text-gray-600">
+      A modern desk lamp with a flexible neck and touch controls.
+     </p>
+     <div class="text-lg font-bold mt-2">
+      $29.99
+     </div>
+     <button class="bg-blue-500 text-white px-4 py-2 mt-4 rounded hover:bg-blue-600" onclick="openOrderForm('Product 6', 29.99)">
+      Order Now
+     </button>
+    </div>
+    <div class="border p-4 text-center">
+     <img alt="Product 7: A set of stainless steel kitchen knives with a wooden block." class="mx-auto" height="300" src="https://storage.googleapis.com/a1aa/image/mTw0KxjSLPoyGlohRzd2lkwrjEE8lDOS4BVPyf9aHSAmI89JA.jpg" width="300"/>
+     <h2 class="text-xl font-bold mt-4">
+      Product 7
+     </h2>
+     <p class="text-gray-600">
+      A set of stainless steel kitchen knives with a wooden block.
+     </p>
+     <div class="text-lg font-bold mt-2">
+      $79.99
+     </div>
+     <button class="bg-blue-500 text-white px-4 py-2 mt-4 rounded hover:bg-blue-600" onclick="openOrderForm('Product 7', 79.99)">
+      Order Now
+     </button>
+    </div>
+    <div class="border p-4 text-center">
+     <img alt="Product 8: A compact and powerful portable Bluetooth speaker." class="mx-auto" height="300" src="https://storage.googleapis.com/a1aa/image/Gh1P0l1OoHY7JBhi0C2AvJKtgGDxoy1rfen1seVcSoMTiw3nA.jpg" width="300"/>
+     <h2 class="text-xl font-bold mt-4">
+      Product 8
+     </h2>
+     <p class="text-gray-600">
+      A compact and powerful portable Bluetooth speaker.
+     </p>
+     <div class="text-lg font-bold mt-2">
+      $39.99
+     </div>
+     <button class="bg-blue-500 text-white px-4 py-2 mt-4 rounded hover:bg-blue-600" onclick="openOrderForm('Product 8', 39.99)">
+      Order Now
+     </button>
+    </div>
+    <div class="border p-4 text-center">
+     <img alt="Product 9: A stylish leather wallet with multiple card slots and a coin pocket." class="mx-auto" height="300" src="https://storage.googleapis.com/a1aa/image/uXubxb26peQvcCl28lzLcN2mTyxu3BeQhw1r2u9ppvVHR47TA.jpg" width="300"/>
+     <h2 class="text-xl font-bold mt-4">
+      Product 9
+     </h2>
+     <p class="text-gray-600">
+      A stylish leather wallet with multiple card slots and a coin pocket.
+     </p>
+     <div class="text-lg font-bold mt-2">
+      $19.99
+     </div>
+     <button class="bg-blue-500 text-white px-4 py-2 mt-4 rounded hover:bg-blue-600" onclick="openOrderForm('Product 9', 19.99)">
+      Order Now
+     </button>
+    </div>
+   </div>
+  </div>
+  <footer class="bg-gray-800 text-white text-center py-4 mt-8">
+   <div class="container mx-auto">
+    © 2023 E-Shop. All rights reserved.
+   </div>
+  </footer>
+  <div class="fixed inset-0 bg-gray-800 bg-opacity-75 flex items-center justify-center hidden" id="orderFormModal">
+   <div class="bg-white p-8 rounded-lg w-96">
+    <h2 class="text-2xl font-bold mb-4">
+     Order Form
+    </h2>
+    <form id="orderForm">
+     <div class="mb-4">
+      <label class="block text-gray-700" for="productName">
+       Product Name
+      </label>
+      <input class="w-full px-3 py-2 border rounded" id="productName" name="productName" readonly type="text"/>
+     </div>
+     <div class="mb-4">
+      <label class="block text-gray-700" for="productPrice">
+       Product Price
+      </label>
+      <input class="w-full px-3 py-2 border rounded" id="productPrice" name="productPrice" readonly type="text"/>
+     </div>
+     <div class="mb-4">
+      <label class="block text-gray-700" for="customerName">
+       Your Name
+      </label>
+      <input class="w-full px-3 py-2 border rounded" id="customerName" name="customerName" required type="text"/>
+     </div>
+     <div class="mb-4">
+      <label class="block text-gray-700" for="customerEmail">
+       Your Email
+      </label>
+      <input class="w-full px-3 py-2 border rounded" id="customerEmail" name="customerEmail" required type="email"/>
+     </div>
+     <div class="mb-4">
+      <label class="block text-gray-700" for="customerAddress">
+       Your Address
+      </label>
+      <textarea class="w-full px-3 py-2 border rounded" id="customerAddress" name="customerAddress" required>
+      </textarea>
+     </div>
+     <div class="flex justify-between">
+      <button class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600" type="submit">
+       Submit Order
+      </button>
+      <button class="bg-red-500 text-white px-4 py-2 rounded hover:bg-red-600" onclick="closeOrderForm()" type="button">
+       Cancel
+      </button>
+     </div>
+    </form>
+   </div>
+  </div>
+  <script>
+   function openOrderForm(productName, productPrice) {
+            document.getElementById('productName').value = productName;
+            document.getElementById('productPrice').value = `$${productPrice}`;
+            document.getElementById('orderFormModal').classList.remove('hidden');
+        }
+
+        function closeOrderForm() {
+            document.getElementById('orderFormModal').classList.add('hidden');
+        }
+
+        document.getElementById('orderForm').addEventListener('submit', function(event) {
+            event.preventDefault();
+            alert('Order submitted successfully!');
+            closeOrderForm();
+        });
+  </script>
+ </body>
+</html>
